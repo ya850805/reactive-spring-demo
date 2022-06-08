@@ -14,8 +14,8 @@ public class InMemoryDataSource {
             new Book("Children Book #4", BigDecimal.valueOf(10.99D), "CHILDREN"),
 
             new Book("Novel #1", BigDecimal.valueOf(6.99D), "NOVEL"),
-            new Book("Novel #1", BigDecimal.valueOf(12.99D), "NOVEL"),
-            new Book("Novel #1", BigDecimal.valueOf(8.99D), "NOVEL"),
-            new Book("Novel #1", BigDecimal.valueOf(1.99D), "NOVEL"),
+            new Book("Novel #2", BigDecimal.valueOf(12.99D), "NOVEL"),
+            new Book("Novel #3", BigDecimal.valueOf(8.99D), "NOVEL"),
+            new Book("Novel #4", BigDecimal.valueOf(1.99D), "NOVEL"),
     };
 }
