@@ -7,6 +7,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Compare functional programming & non-functional programming
+ */
 public class C01FunctionalProgramming101 {
     //返回一個包含每種類別中最貴的書的列表(非函數式編程)
     public static List<Book> getMostExpensiveBookByCategory() {

@@ -6,6 +6,9 @@ import reactor.core.publisher.Flux;
 
 import java.util.Comparator;
 
+/**
+ * Test reactive programming
+ */
 public class C02ReactiveProgramming101 {
     //返回一個包含每種類別中最貴的書的列表(響應式編程)
     public static Flux<Book> getMostExpensiveBooksByCategoryReactive(Flux<Book> books) {
