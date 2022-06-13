@@ -24,6 +24,17 @@ public class C01ReactorAPIs {
         subscribeFlux("rangeFlux", rangeFlux);
     }
 
+    private static void createFluxProgrammatically() {
+        var generateFlux = Flux.generate(() -> 1, (state, sink) -> {
+            sink.next("message #" + state);
+            if(state == 10) {
+                sink.complete();
+            }
+            return state + 1;
+        });
+
+        subscribeFlux("generateFlux", generateFlux);
+    }
 
     private static void subscribeFlux(String varName, Flux<?> flux) {
         flux.doOnSubscribe(s -> System.out.print(varName + ": "))
@@ -34,5 +45,6 @@ public class C01ReactorAPIs {
 
     public static void main(String[] args) {
         createFluxFromExistingData();
+        createFluxProgrammatically();
     }
 }
