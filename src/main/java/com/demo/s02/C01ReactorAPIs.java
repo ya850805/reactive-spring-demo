@@ -2,13 +2,15 @@ package com.demo.s02;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
+/**
+ * test common API.
+ */
 public class C01ReactorAPIs {
 
     private static void createFluxFromExistingData() {
